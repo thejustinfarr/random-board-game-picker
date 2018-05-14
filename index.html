@@ -18,17 +18,17 @@
         </style>
     </head>
     <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
         <h1>Magic Webpage, Please Choose A SOLO Game For Me</h1>
         <h2>
             <script type="text/javascript">
                 // If X is < 2 choose from soloArray
-                // If X is >= 2 choose from 2playerplusArray
+                // If X is >= 2 choose from twoPlayerPlusArray
                 // If X is >= 3 choose from 3playerplusArray
                 // If X is >= 4 choose from 4playerplusArray
                 // Here is a the list of games I currently own
-                var textArray = [
+                let onePlayerGames = [
                     'Dungeon Solitaire',
                     'Draconis Invasion',
                     'Agricola',
@@ -40,31 +40,30 @@
                     'FITS'
                 ];
                 // Choose a random game from the array above
-                var game = textArray[Math.floor(Math.random() * textArray.length)];
+                let soloGame = onePlayerGames[Math.floor(Math.random() * onePlayerGames.length)];
 
                 // Display the name of the game here
-                document.write(game);
+                document.write(soloGame);
             </script>
         </h2>
         </div>
-    </div>
+
 
         <br><br>
         <hr>
         <br><br>
 
-    <div class="container">
         <div class="row">
         <h1>Magic Webpage, Please Choose A 2 Player Game For Me</h1>
         <h2>
-        
+
             <script type="text/javascript">
                 // If X is < 2 choose from soloArray
-                // If X is >= 2 choose from 2playerplusArray
+                // If X is >= 2 choose from twoPlayerPlusArray
                 // If X is >= 3 choose from 3playerplusArray
                 // If X is >= 4 choose from 4playerplusArray
                 // Here is a the list of games I currently own
-                var soloArray = [
+                let twoPlayerPlusArray = [
                     'Patchwork',
                     'Draconis Invasion',
                     'Quiddler',
@@ -87,14 +86,14 @@
                     'Zothren Invasion'
                 ];
                 // Choose a random game from the array above
-                var game = soloArray[Math.floor(Math.random() * soloArray.length)];
+                var twoPlayerGame = twoPlayerPlusArray[Math.floor(Math.random() * twoPlayerPlusArray.length)];
 
                 // Display the name of the game here
-                document.write(game);
+                document.write(twoPlayerGame);
             </script>
         </h2>
         </div>
     </div>
-        
+
     </body>
 </html>
